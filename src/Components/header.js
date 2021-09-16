@@ -13,7 +13,7 @@ function Header(){
     };
 
     return (
-        <div className="container">
+        <div className="headerContainer">
             <h1>Menty</h1>
             <div>
             <Box sx={{ width: '100%' }}>
