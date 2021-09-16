@@ -1,10 +1,54 @@
+.titleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .titleBox {
-    max-width: 1200px;
+    box-shadow: inset 5em 1em orange;
+    display: flex;
+    justify-content: center;
 }
 
 .title {
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 800;
     color: rgba(68, 68, 68, 1);
+    text-shadow:rgb(80, 80, 80);
     text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 60px;
+}
+
+.subContainer {
+    width: 30%;
+}
+
+.subContainer h3 {
+    font-size: 25px;
+    color:rgb(32, 37, 109);
+}
+
+.subContainer p {
+    font-size: 18px;
+    color: rgb(87, 87, 87);
+}
+
+.subContainer button {
+    border: orange;
+    border-radius: 4px;
+    font-size: 20px;
+    color: white;
+    background: orange;
+    padding: 10px;
+}
+
+.subContainer button:hover {
+    opacity: 80%;
+    transition: 300ms;
+    cursor: pointer;
 }
