@@ -1,0 +1,10 @@
+.titleBox {
+    max-width: 1200px;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(68, 68, 68, 1);
+    text-transform: uppercase;
+}
