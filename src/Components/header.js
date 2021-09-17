@@ -35,12 +35,15 @@ function Header(){
                             <Tab value="three" label="Mentors" component={Link} to={links[1]} />
                             <Tab value="four" label="Contact Us" />
                         </Tabs>
-                        <Switch>
-                            <Route path={links[1]} render={() => <div><Gallery /></div>} />
-                        </Switch>
+                        
                     </Box>
                     </div>
         </div>
+
+            <Switch>
+                    <Route path={links[1]} render={() => <div><Gallery /></div>} />
+            </Switch>
+
         </Router>
 
     );
