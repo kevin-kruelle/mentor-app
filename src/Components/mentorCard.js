@@ -71,6 +71,7 @@ export default function MentorModal(props) {
             {props.data.company}<br/>
             {props.data.field}<br/>
             {props.data.interests}<br/>
+            {props.data.bio}<br />
             <a href={props.data.resources} target="_blank"><button className="resourceButton">Resources</button></a>
             {/* {props.resources.map(resource => < ResourceCard data={data} /> )} */}
           </Typography>
@@ -91,6 +92,7 @@ const Mentor = (props) => {
   // }
 
   return (
+    <>
     <div>
       {/* { !render && <MentorProfile /> } */}
       <div className="mentor-card" >      
@@ -157,5 +159,6 @@ const Mentor = (props) => {
         </div>
       </div>
   </div>
+  </>
   );
 };
