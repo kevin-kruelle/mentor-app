@@ -11,6 +11,7 @@ import data from '../data';
 import MentorProfile from './MentorProfile';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
+import './mentorCard.css';
 
 const useStyles = makeStyles({
   root: {
@@ -27,9 +28,8 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
+  width: 600,
   bgcolor: 'background.paper',
-  border: '2px solid #000',
   boxShadow: 24,
   p: 4,
 };
@@ -71,6 +71,7 @@ export default function MentorModal(props) {
             {props.data.company}<br/>
             {props.data.field}<br/>
             {props.data.interests}<br/>
+            <a href={props.data.resources} target="_blank"><button className="resourceButton">Resources</button></a>
             {/* {props.resources.map(resource => < ResourceCard data={data} /> )} */}
           </Typography>
         </Box>

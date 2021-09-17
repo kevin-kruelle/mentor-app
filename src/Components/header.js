@@ -19,15 +19,12 @@ function Header(){
     return (
         <Router>
         <div className="headerContainer">
-        <Route 
-            path="/" 
-            render={({ location }) => (
-                <>
+
                     <h1>Menty</h1>
                     <div>
                     <Box sx={{ width: '100%' }}>
                         <Tabs
-                            value={location.pathname}
+                            value={value}
                             onChange={handleChange}
                             textColor="secondary"
                             indicatorColor="secondary"
@@ -40,15 +37,9 @@ function Header(){
                         </Tabs>
                         <Switch>
                             <Route path={links[1]} render={() => <div><Gallery /></div>} />
-                            <Route path={links[2]} render={() => <div>Tab 3</div>} />
-                            <Route path={links[0]} render={() => <div>Tab 1</div>} />
                         </Switch>
                     </Box>
                     </div>
-                </>
-            )} 
-                
-        />
         </div>
         </Router>
 
