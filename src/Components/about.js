@@ -8,7 +8,6 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 
 function About(){
-
     return (
         <Router>
             <div className="titleContainer">

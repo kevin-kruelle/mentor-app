@@ -1,0 +1,35 @@
+.facts-flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.text-container {
+    padding: 1em 2em;
+}
+
+img {
+    padding: 2em;
+    width: 30%;
+}
+
+h1 {
+    padding: 0em !important;
+}
+
+button {
+    background: orange;
+    border: orange;
+    color: white;
+    padding: 1em;
+    border-radius: 4px;
+}
+
+strong {
+    font-size: 3em;
+    padding-top: 0em;
+}
+
+h3 {
+    letter-spacing:.2em;
+}
